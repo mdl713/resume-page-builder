@@ -1,0 +1,105 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://github.com/mdl713/resume-page-builder",
+	"title": "Resume",
+	"type": "object",
+	"required": [
+		"header",
+		"body"
+	],
+	"properties": {
+		"header": {
+			"$id": "#resume/header",
+			"title": "Header",
+			"type": "array",
+			"default": [],
+			"items": {
+				"$id": "#resume/header/items",
+				"title": "Items",
+				"type": "object",
+				"required": [
+					"field",
+					"value"
+				],
+				"properties": {
+					"field": {
+						"$id": "#resume/header/items/field",
+						"title": "Field",
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"value": {
+						"$id": "#resume/header/items/value",
+						"title": "Value",
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					}
+				}
+			}
+		},
+		"body": {
+			"$id": "#resume/body",
+			"title": "Body",
+			"type": "array",
+			"default": [],
+			"items": {
+				"$id": "#resume/body/items",
+				"title": "Items",
+				"type": "object",
+				"required": [
+					"section",
+					"values"
+				],
+				"properties": {
+					"section": {
+						"$id": "#resume/body/items/section",
+						"title": "Section",
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"values": {
+						"$id": "#resume/body/items/values",
+						"title": "Values",
+						"type": "array",
+						"default": [],
+						"items": {
+							"$id": "#resume/body/items/values/items",
+							"title": "Items",
+							"type": "array",
+							"default": [],
+							"items": {
+								"$id": "#resume/body/items/values/items/items",
+								"title": "Items",
+								"type": "object",
+								"required": [
+									"field",
+									"value"
+								],
+								"properties": {
+									"field": {
+										"$id": "#resume/body/items/values/items/items/field",
+										"title": "Field",
+										"type": "string",
+										"default": "",
+										"pattern": "^.*$"
+									},
+									"value": {
+										"$id": "#resume/body/items/values/items/items/value",
+										"title": "Value",
+										"type": "string",
+										"default": "",
+										"pattern": "^.*$"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
