@@ -10,4 +10,4 @@
  */
 namespace resume;
 
-echo '<style>' . file_get_contents('assets/resume.css') . '</style>';
+echo '<style>' . file_get_contents('assets/style/resume.css') . '</style>';
