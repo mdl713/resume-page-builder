@@ -17,6 +17,9 @@ $resume = json_decode(file_get_contents('data/resume.json'), true);
 
 $header = $resume['header'];
 $body = $resume['body'];
+$name = $header[0]['value'];
+
+echo '<title>Resume for ' . $name . '</title>';
 
 display_fields($header);
 
@@ -36,5 +39,3 @@ for ($i = 0; $i < sizeof($body); $i++) {
 		echo '</br>';
 	}	
 }
-
-// echo '</br></br>'; print_r($resume);
