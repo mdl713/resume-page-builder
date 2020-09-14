@@ -4,6 +4,6 @@ JSON Resume Builder to consume template of personal info for display on a web pa
 
 ## TTD
 
-* [ ] Create repository structure
-* [ ] Initialize repository
+* [x] Create repository structure
+* [x] Initialize repository
 * [ ] Add schema definition
