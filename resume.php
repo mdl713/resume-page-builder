@@ -21,9 +21,7 @@ $name = $header[0]['value'];
 
 echo '<title>Resume for ' . $name . '</title>';
 
-display_fields($header);
-
-echo '</br>';
+echo '<h1>Resume for ' . $name . '</h1>';
 
 for ($i = 0; $i < sizeof($body); $i++) {
 	$title = $body[$i]['section'];
