@@ -12,33 +12,27 @@
 		"header": {
 			"$id": "#resume/header",
 			"title": "Header",
-			"type": "array",
-			"default": [],
-			"items": {
-				"$id": "#resume/header/items",
-				"title": "Items",
-				"type": "object",
-				"required": [
-					"field",
-					"value"
-				],
-				"properties": {
-					"field": {
-						"$id": "#resume/header/items/field",
-						"title": "Field",
-						"type": "string",
-						"default": "",
-						"pattern": "^.*$"
-					},
-					"value": {
-						"$id": "#resume/header/items/value",
-						"title": "Value",
-						"type": "string",
-						"default": "",
-						"pattern": "^.*$"
-					}
+			"type": "object",
+			"properties": {
+				"name": {
+					"$id": "#resume/header/name",
+					"title": "Field",
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"purpose": {
+					"$id": "#resume/header/purpose",
+					"title": "Value",
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
 				}
-			}
+			},
+			"required": [
+				"name",
+				"purpose"
+			]
 		},
 		"body": {
 			"$id": "#resume/body",
