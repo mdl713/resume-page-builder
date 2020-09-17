@@ -17,11 +17,13 @@ $resume = json_decode(file_get_contents('data/resume.json'), true);
 
 $header = $resume['header'];
 $body = $resume['body'];
-$name = $header[0]['value'];
+$name = $header['name'];
+$purpose = $header['purpose'];
 
 echo '<title>Resume for ' . $name . '</title>';
 
 echo '<h1>Resume for ' . $name . '</h1>';
+echo '<p>' . $purpose . '</p>';
 
 for ($i = 0; $i < sizeof($body); $i++) {
 	$title = $body[$i]['section'];
