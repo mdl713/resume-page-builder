@@ -16,14 +16,14 @@
 			"properties": {
 				"name": {
 					"$id": "#resume/header/name",
-					"title": "Field",
+					"title": "Name",
 					"type": "string",
 					"default": "",
 					"pattern": "^.*$"
 				},
 				"purpose": {
 					"$id": "#resume/header/purpose",
-					"title": "Value",
+					"title": "Purpose",
 					"type": "string",
 					"default": "",
 					"pattern": "^.*$"
