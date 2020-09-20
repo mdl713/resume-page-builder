@@ -1,6 +1,6 @@
 # resume-page-builder
 
-JSON Resume Builder to consume template of personal info for display on a web page.
+Page display template for personal resume stored in a JSON object.
 
 ## TTD
 
@@ -9,3 +9,5 @@ JSON Resume Builder to consume template of personal info for display on a web pa
 * [ ] Create page HTML structure
 
 ## Additional Info
+
+Template style uses [Khula Font](https://fonts.google.com/specimen/Khula).
