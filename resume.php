@@ -34,8 +34,6 @@ for ($i = 0; $i < sizeof($body); $i++) {
 	for ($k = 0; $k < sizeof($details); $k++) {
 		$inner = $details[$k];
 
-		display_fields($inner);
-
-		echo '</br>';
+		display_fields($inner);	
 	}	
 }

@@ -14,10 +14,12 @@ namespace resume;
 function display_fields($array) {
 	$array_length = sizeof($array);
 
+	echo '<p>';
 	for ($i = 0; $i < $array_length; $i++) {
 		$field = $array[$i]['field'];
 		$value = $array[$i]['value'];
 	
 		echo $field . ': ' . $value . '</br>';
 	}
+	echo '</p>';
 } 
