@@ -1,6 +1,16 @@
+@font-face {
+	font-family: 'Khula Light';
+	src: url('./assets/fonts/Khula-Light.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: 'Khula Regular';
+	src: url('./assets/fonts/Khula-Regular.ttf')  format('truetype');
+}
+
 body {
 	font-size: 16px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Khula Regular', 'Segoe UI', sans-serif;
 }
 
 h1 {

@@ -29,7 +29,7 @@ for ($i = 0; $i < sizeof($body); $i++) {
 	$title = $body[$i]['section'];
 	$details = $body[$i]['values'];
 
-	echo '<strong>' . $title . '</strong>' . '</br></br>';
+	echo '<h2>' . $title . '</h2>';
 
 	for ($k = 0; $k < sizeof($details); $k++) {
 		$inner = $details[$k];
